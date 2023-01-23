@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Smart pay</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-v2-Modal--Full-with-Google-Map.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+</head>
+
+<body>
+<div id="vue_app">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient">
+        <div class="container-fluid"><a class="navbar-brand logo" href="#"><em>Smart</em> Pay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto" id="nav">
+                    <li v-for="element in elements" class="nav-item item" role="presentation"><a class="nav-link active" v-bind:href="element.href">{{ element.title }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="jumbotron" id="employeeEdit" style="margin-top: 84.375px;height: 350px;">
+            <h2><strong>Delete Employee Records</strong></h2>
+            <p><br><strong>Welcome to the Adminstrator's dashboard, make changes tidy up employee records</strong><br><br></p>
+            <p><a class="btn btn-primary" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <div>
+        <h1>Edit & Delete</h1>
+        <h4>Edit or Delete Appropriate Employee Records</h4>
+        <div class="table-responsive" style="margin-top:40px;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Department</th>
+                        <th>Sex</th>
+                        <th>Phone number</th>
+                        <th>Date of Commencement</th>
+                        <th>&nbsp;&nbsp;</th>
+                        <th>&nbsp;&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="employee in employees">
+                        <td>{{ employee.fullName }}</td>
+                        <td>{{ employee.department }}</td>
+                        <td>{{ employee.sex }}</td>
+                        <td>{{ employee.phone_number }}</td>
+                        <td>{{ employee.doc }}</td>
+                        <td>
+                            <button @click="updateEmployee(employee.employee_id)" class="btn btn-primary" type="button">Update</button>
+                        </td>
+                        <td>
+                            <button @click="deleteEmployee(employee.employee_id)" class="btn btn-primary" type="button" style="background-color: rgb(255,28,14);">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <div>
+        <div class="btn-group" role="group" style="margin-top: 10px;margin-left: 550px;">
+            <button class="btn btn-primary" type="button">Update</button>
+            <button class="btn btn-primary" type="button" style="background-color: rgb(255,28,14);">Delete</button>
+        </div>
+    </div> -->
+    <div>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+                <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/controller.admin_employee_edit.js"></script>
+
+</body>
+
+</html>

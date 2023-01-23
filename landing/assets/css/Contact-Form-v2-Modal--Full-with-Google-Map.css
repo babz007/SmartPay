@@ -1,0 +1,107 @@
+#contactForm .h4 {
+  font-weight: 400;
+  border-bottom: 1px solid silver;
+}
+
+.required-input {
+  color: maroon;
+}
+
+.static-map {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) and (min-width: 767px) {
+  #contactForm .static-map img {
+    width: 100%;
+  }
+}
+
+.login-clean {
+}
+
+#adminDash {
+  text-align: center;
+  padding: 120px;
+  background: url(../../assets/img/Insuring-the-Insurance-Business-with-Actionable-Analytics_HD.jpg);
+  background-size: cover;
+}
+
+#EmployeeDash {
+  background-image: url(../../assets/img/Risk-Analytics-market.jpg);
+  background-position: cover;
+  text-align: center;
+}
+
+#EmployeePayroll {
+  background-image: url(../../assets/img/Risk-Analytics-market.jpg);
+  background-position: cover;
+  text-align: center;
+  background-size: cover;
+}
+
+#SamplePayroll {
+  background-image: url(../../assets/img/Risk-Analytics-market.jpg);
+  background-position: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+#adminLogin {
+  align-content: center;
+  text-align: center;
+}
+
+#employeeEdit {
+  background-image: url(../../assets/img/Insuring-the-Insurance-Business-with-Actionable-Analytics_HD.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+#AboutUs {
+  background-image: url(../../assets/img/Risk-Analytics-market.jpg);
+  background-size: inherit;
+  text-align: center;
+}
+
+#Pricingimage {
+  background-size: contain;
+}
+
+#pricingText {
+  text-align: center;
+}
+
+#PricingLearnmore {
+  text-align: center;
+}
+
+#EmpSignUp {
+  align-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+#EmpPayroll {
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#EmpPayroll {
+  align-content: center;
+}
+
+#firmSignup {
+}
+
+#EnterCompanyInformation {
+  text-align: center;
+}
+
+#loginpagebtn {
+  align-content: center;
+  text-align: center;
+}
+

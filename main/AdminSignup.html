@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Smart pay</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-v2-Modal--Full-with-Google-Map.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-sm text-left navigation-clean-button">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient">
+                <div class="container"><a class="navbar-brand logo" href="#"><em>Smart</em> Pay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item item" role="presentation"><a class="nav-link active" href="AdminDash.html">Home</a></li>
+                            <li class="nav-item item" role="presentation"><a class="nav-link" href="AdminDash.html">Admin dashboard</a></li>
+                            <li class="nav-item item" role="presentation"><a class="nav-link" href="#"></a></li>
+                            <li class="nav-item item" role="presentation"><a class="nav-link" href="AdminLogin.html">Log out</a></li>
+                        </ul>
+                </div>
+        </div>
+        </nav>
+        </div>
+    </nav>
+    <div class="container">
+        <h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp;Sign up New Employee</h3>
+    </div>
+    <div></div>
+    <h1></h1>
+    <h3 style="margin-top: 30px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>&nbsp;Sign up New Employee</strong></h3>
+    <div>
+        <div class="container" id="vue_app">
+            <div class="row" id="empSignUp">
+                <div class="col-md-6 col-xl-3 offset-xl-1">
+                    <img src="assets/img/newuser3.png"></img>
+                </div>
+                <div class="col">
+                <form action="connect.php" method="post">
+                    <div class="form-group">
+
+                        <label>
+                            <strong>First Name</strong>: 
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        </label>
+                        <input v-model="firstName" type="text" id="firstName" name="first_name" style="width: 350px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <strong>Last Name</strong>: 
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        </label>
+                        <input v-model="lastName" type="text" id="lastName" name="last_name" style="width: 350px;">
+                    </div>
+
+                    <label>
+                        <strong>Department</strong>: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </label>
+                    <input v-model="department" type="text" id="department" name="department" style="width: 350px;">
+                    
+                        <strong>Phone number</strong>: 
+                        &nbsp; &nbsp;&nbsp;
+                    </label>
+                    <input v-model="phoneNumber" type="text" id="phoneNumber" name="phone_number" style="width: 350px;">
+
+                    
+
+                    <label>
+                        <strong>Password</strong>: &nbsp;
+                    </label>
+                    <input v-model="password" class="form-control" type="password" name="password" style="width: 470px;height: 30px;">
+                    <label>
+                        <strong>Confirm Password:</strong>
+                    </label>
+
+                    <input class="form-control" type="password" id="password"style="width: 470px;height: 30px;margin-bottom: 10px;">
+
+                    <button class="btn btn-primary" id="EmpSignUp" type="submit">Sign up</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="portfolio-block website gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-5 offset-lg-1 text">
+                    <h3><em>Smart</em> Pay</h3>
+                    <p><br>We design our payroll solutions to save you time and money. Smart pay is a platform for you to grow your business and support your team<br><br></p>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="portfolio-laptop-mockup">
+                        <div class="screen">
+                            <div class="screen-content" style="background-image:url(&quot;assets/img/tech/image6.png&quot;);"></div>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+                <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            </div>
+        </footer>
+        <div></div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <!-- <script src="js/AdminLogin.js"></script> -->
+    <script src="js/vue.js"></script>
+    <script src="js/controller.admin_create_employee.js"></script>
+</body>
+
+</html>
